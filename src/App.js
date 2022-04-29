@@ -1,29 +1,19 @@
-import React, { createContext, useReducer } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./components/home";
-import Login from "./components/Login";
-import { initialState, reducer } from "./store/reducer";
+import React from "react";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import UserPage from "./containers/UserPage";
 
-
-export const AuthContext = createContext();
+import "./App.css";
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-
+  const username = prompt("Enter Github Username");
+  
   return (
-    <AuthContext.Provider
-      value={{
-        state,
-        dispatch
-      }}
-    >
-    <Router>
+    <BrowserRouter>
       <Switch>
-        <Route path="/login" component={Login}/>
-        <Route path="/" component={Home}/>
+        <Route path="/:userName" component={UserPage} />
+        <Redirect to={`/${username}`} />
       </Switch>
-    </Router>
-    </AuthContext.Provider>
+    </BrowserRouter>
   );
 }
 
