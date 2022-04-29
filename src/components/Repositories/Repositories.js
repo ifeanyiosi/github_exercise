@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Repositories.scss";
+import "./Repositories.css";
 import Repository from "./Repository";
 
 const Repositories = ({ repos, user }) => (

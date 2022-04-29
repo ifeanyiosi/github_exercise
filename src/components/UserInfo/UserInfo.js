@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./UserInfo.scss";
+import "./UserInfo.css";
 
 const UserInfo = ({ user }) => (
   <div className="user-infos">

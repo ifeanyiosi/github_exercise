@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Tabs.scss";
+import "./Tabs.css";
 
 const Tabs = ({ repos, user }) => (
   <ul className="nav nav-tabs">

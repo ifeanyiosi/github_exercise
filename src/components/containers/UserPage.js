@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { getUserData, getUserRepositories } from "../providers/githubProvider";
 
-import Navbar from "../components/Navbar/navbar";
-import UserInfos from "../components/UserInfo/UserInfo";
-import Repositories from "../components/Repositories/Repositories";
-import Tabs from "../components/Tabs/Tabs";
+import Navbar from '../NavBar/NavBar'
+import UserInfos from "../UserInfo/UserInfo";
+import Repositories from "../Repositories/Repositories";
+import Tabs from "../Tabs/Tabs";
 
-import Loading from "../components/Loading/loading";
+import Loading from "../Loading/Loading";
 
 function UserPage({ match }) {
   const [user, setUser] = useState();

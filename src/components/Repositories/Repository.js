@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Repositories.scss";
+import "./Repositories.css";
 
 const Repository = ({ repo, user }) => (
   <div className="repo">

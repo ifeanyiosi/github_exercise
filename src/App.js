@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import UserPage from "./containers/UserPage";
+
+import Login from "./components/Login";
 
 import "./App.css";
 
@@ -10,8 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/:userName" component={UserPage} />
-        <Redirect to={`/${username}`} />
+        
+        <Login/>
+        
       </Switch>
     </BrowserRouter>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 
 import spinner from "../../spinner.gif";
-import "./Loading.scss";
+import "./Loading.css";
 
 const Loading = () => (
   <div className="loading">
