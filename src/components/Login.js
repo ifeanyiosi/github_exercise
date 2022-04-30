@@ -5,7 +5,7 @@ import {AiFillGithub} from 'react-icons/ai'
 import { AuthContext } from "../App";
 import { supabase } from "../client";
 import './Login.scss'
-import UserPage from "./containers/UserPage";
+
 
 
 export default function Login() {
